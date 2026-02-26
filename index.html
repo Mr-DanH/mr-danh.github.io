@@ -2,8 +2,49 @@
 <html>
 <head>
   <title>Dan Hines</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    navbar {
+      position: fixed;
+      align-items: center;
+      height: 60px;
+    }
+
+    main {
+      margin-top: 60px;
+    }
+
+    section {
+      min-height: 100vh;
+    }
+    
+  </style>  
 </head>
 <body>
-  <p>Hello</p>
+  <navbar>
+    Dan Hines
+    <a href="#home">Home</a>
+    <a href="#work">Work</a>
+    <a href="#jams">Jams</a>
+  </navbar>
+
+  <main>
+    <section id="home">
+      Intro text here
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <p>Professional projects here</p>
+    </section>
+
+    <section id="jams">
+      <h2>Jams</h2>
+      <p>Jams here</p>p>
+    </section>
+  </main>
 </body>
 </html>
