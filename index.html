@@ -13,11 +13,17 @@
       color: #92ccff
     }
 
+    a, a:visited, a:hover, a:active {
+        color: #ffff77;
+    }
+
+
     navbar {
       position: fixed;
-      align-items: center;
-      justify-content: center;
-	  display: flex;
+      /* align-items: center; */
+      /* justify-content: center; */
+	  /* display: flex; */
+      text-align: center;
       height: 100px;
 	  background: #000033;
 	  top: 0;
@@ -26,7 +32,7 @@
     }	
 	
     navlinks {
-	  display: flex;
+	  /* display: flex; */
     }
 
     main {
@@ -35,7 +41,7 @@
 
     section {
 		scroll-margin-top: 120px;
-      min-height: 100vh;
+      /* min-height: 100vh; */
     }
     
   </style>  
@@ -55,99 +61,124 @@
         Hi there.
         <p>I've been making games professionally for nearly two decades, alongside various game jams that I've done throught the years.
         <p>This site is just a place to collect the various projects I've worked on over the years.
+    
     </section>
 
     <section id="career">
       <h2>Career</h2>
+
+        Some notable projects I've worked on professionally, tap for more details
+        
+        <br><br>
       
-        Pure<br>
-        <img src="Screenshots/Pure.jpg" width=512 height=288>      
-        <br>My first professional project in the games industry. A lot of people described this as "SSX with quadbikes" (I didn't realise initially that people saw quadbikes as sortof uncool). As a junior at this point, I worked on assorted odds and ends: some of the environment shaders and frontend screens are mine, & if you had a good multiplayer game that's because I spent a couple of months fixing networking bugs. Also, if you also played the game on launch (pre-patch) and saw your console unexpectedly hard reset on the leaderboard screen, yep, that was my screwup from blowing a string buffer.
+        <img src="Screenshots/Pure.jpg" width=512 height=288 onclick="openModal('Screenshots/Pure.jpg', 'Pure', 'Black Rock Studio', 'Xbox 360 / Playstation 3', 'My first professional project in the games industry. A lot of people described this as `SSX with quadbikes` (I didn\'t realise initially that people saw quadbikes as sortof uncool). As a junior at this point, I worked on assorted odds and ends: some of the environment shaders and frontend screens are mine, & if you had a good multiplayer game that\'s because I spent a couple of months fixing networking bugs. Also, if you also played the game on launch (pre-patch) and saw your console unexpectedly hard reset on the leaderboard screen, yep, that was my screwup from blowing a string buffer.')" style="cursor: pointer;">      
 
-        <br><br>
+        <img src="Screenshots/SplitSecond.jpg" width=512 height=288 onclick="openModal('Screenshots/SplitSecond.jpg', 'Split/Second', 'Black Rock Studio', 'Xbox 360 / Playstation 3', 'Competitive car racing, but with the destruction of a movie car chase. This was a solid racing game, although if you hate being blue-shelled in Mario Kart, just wait until someone drops a literal building on you. I worked on assorted ingame screens and bits of the UI. Very clearly recall staring at the floating 2D icons in the HUD for a couple of weeks trying to work out why they looked `off`, until I realised I\'d scaled them incorrectly over distance. By the end of this project, I realised I\'d become someone who gets really bothered by bad interfaces or usability. ')" style="cursor: pointer;">     
 
-        Split/Second<br>
-        <img src="Screenshots/SplitSecond.jpg" width=512 height=288>      
-        <br>Competitive car racing, but with the destruction of a movie car chase. This was a solid racing game, although if you hate being blue-shelled in Mario Kart, just wait until someone drops a literal building on you. I worked on assorted ingame screens and bits of the UI. Very clearly recall staring at the floating 2D icons in the HUD for a couple of weeks trying to work out why they looked 'off', until I realised I'd scaled them incorrectly over distance. By the end of this project, I realised I'd become someone who gets really bothered by bad interfaces or usability. 
+        <img src="Screenshots/AlienIsolation.jpg" width=512 height=288 onclick="openModal('Screenshots/AlienIsolation.jpg', 'Alien Isolation', 'Creative Assembly', 'Xbox 360 / Playstation 3 / PC', 'Probably the most prestigious project on my resume and ironically the one that I walked away from to pursue work elsewhere. Hence, I hold the glorious credit of `Additional Programming`. For the time I was there, I was the sole UI programmer and I set up a lot of early iterations of crafting and minigames interfaces, and a first pass of the motion detector (which at least remained a substantial element in the final game).')" style="cursor: pointer;">      
 
-        <br><br>
+        <img src="Screenshots/FriendlyFire.jpg" width=512 height=288 onclick="openModal('Screenshots/FriendlyFire.jpg', 'Friendly Fire', 'Shortround Games', 'Android / iOS', 'Clash of Clans but with street data. It turns out if your local roads are the routes that units have to travel down to attack your base, everyone suddenly `lives` on a farm in the middle of nowhere. We had to do a lot of creative balancing with this game.  I wrote all of the gameplay and a reasonable chunk of the frontend for this. Also, ended up porting RakNet to work with Unity and adding a synchronous multiplayer mode later in the project.')" style="cursor: pointer;">      
 
-        Alien Isolation<br>
-        <img src="Screenshots/AlienIsolation.jpg" width=512 height=288>      
-        <br>Probably the most prestigious project on my resume and ironically the one that I walked away from to pursue work elsewhere. Hence, I hold the glorious credit of "Additional Programming". For the time I was there, I was the sole UI programmer and I set up a lot of early iterations of crafting and minigames interfaces, and a first pass of the motion detector (which at least remained a substantial element in the final game).
+        <img src="Screenshots/RivalGearsRacing.jpg" width=512 height=288 onclick="openModal('Screenshots/RivalGearsRacing.jpg', 'Rival Gears Racing', 'Shortround Games', 'Android / iOS', 'Hover-car racing. Well, mostly a game about not slamming into the back of traffic. The future still has bad drivers. I mostly worked on the UI and the campaign/tutorial progression for this, and a few odds and ends with the networking (we re-used the RakNet port I did for Friendly fire) and AI balancing.')" style="cursor: pointer;">      
 
-        <br><br>
+        <img src="Screenshots/NflRivals.png" width=512 height=236 onclick="openModal('Screenshots/NflRivals.png', 'NFL Rivals', 'Mythical Games', 'Android / iOS', 'As an English person, I spent my first week on this project googling `How to play American Football`. I then went and implemented 90% of the gameplay from scratch. A lot of ball trajectory calculations (thankfully we didn\'t have to model drag), AI team logic, play strategies and in-world UI. I also wrote a serialised scripted game mode system towards the end although it never really got the usage I\'d hoped.')" style="cursor: pointer;">      
 
-        Friendly Fire<br>
-        <img src="Screenshots/FriendlyFire.jpg" width=512 height=288>      
-        <br>Clash of Clans but with street data. It turns out if your local roads are the routes that units have to travel down to attack your base, everyone suddenly 'lives' on a farm in the middle of nowhere. We had to do a lot of creative balancing with this game.  I wrote all of the gameplay and a reasonable chunk of the frontend for this. Also, ended up porting RakNet to work with Unity and adding a synchronous multiplayer mode later in the project.
-
-        <br><br>
-
-        Rival Gears Racing<br>
-        <img src="Screenshots/RivalGearsRacing.jpg" width=512 height=288>      
-        <br>Hover-car racing. Well, mostly a game about not slamming into the back of traffic. The future still has bad drivers. I mostly worked on the UI and the campaign/tutorial progression for this, and a few odds and ends with the networking (we re-used the RakNet port I did for Friendly fire) and AI balancing.
-
-        <br><br>
-
-        NFL Rivals<br>
-        <img src="Screenshots/Nflrivals.png" width=512 height=236>      
-        <br>As an English person, I spent my first week on this project googling "How to play American Football". I then went and implemented 90% of the gameplay from scratch. A lot of ball trajectory calculations (thankfully we didn't have to model drag), AI team logic, play strategies and in-world UI. I also wrote a serialised scripted game mode system towards the end although it never really got the usage I'd hoped. 
-
-        <br><br>
     </section>
 
     <section id="jams">
       <h2>Jams</h2>
+      
+    Jam projects I've worked on, tap for more details
 
       <h3>Unity WebGL (Playable in browser)</h3>
 
-        <a href="https://mrdanh.itch.io/biodiversityforbeginners">
-        Biodiversity for Beginners<br>
-        <img src="Screenshots/BFB.png" width=512 height=288>
-        </a>        
-        <br>We made a game about trying to keep an animal ecosystem alive on an island, where each animal would breed with its own species and seek other species to eat (unless it was a herbivore). I coded most the animal logic and it ended up quite chaotic, I think a gentler balance for animal lifetimes and hunger would've made it more of the zen expeirence I originally envisioned, although if you like spinning plates, this could be the game for you.
+        <img src="Screenshots/BFB.png" width=512 height=288 onclick="openJamModal('Screenshots/BFB.png', 'Biodiversity for Beginners', 'https:\/\/mrdanh.itch.io/biodiversityforbeginners', 'We made a game about trying to keep an animal ecosystem alive on an island, where each animal would breed with its own species and seek other species to eat (unless it was a herbivore). I coded most the animal logic and it ended up quite chaotic, I think a gentler balance for animal lifetimes and hunger would\'ve made it more of the zen expeirence I originally envisioned, although if you like spinning plates, this could be the game for you.')" style="cursor: pointer;">      
 
-        <br><br>
+        <img src="Screenshots/HCB.png" width=512 height=288 onclick="openJamModal('Screenshots/HCB.png', 'Hot Celestial Bodies', 'https:\/\/mrdanh.itch.io/hot-celestial-bodies', 'It\'s speed-dating with aliens. Probably the weirdest game I\'ve made, but we got a lot of compliments on this one, so I think people vibed with the weirdness. I worked on all sorts of random bits for this, like the entry/exit animations and interacting with the items on the table. Also, I got to write all sort of terrible jokes for the text (like the name Hot Celestial Bodies).')" style="cursor: pointer;">     
 
-        <a href="https://mrdanh.itch.io/hot-celestial-bodies">
-        Hot Celestial Bodies<br>
-        <img src="Screenshots/HCB.png" width=512 height=288>
-        </a>        
-        <br>It's speed-dating with aliens. Probably the weirdest game I've made, but we got a lot of compliments on this one, so I think people vibed with the weirdness. I worked on all sorts of random bits for this, like the entry/exit animations and interacting with the items on the table. Also, I got to write all sort of terrible jokes for the text (like the name Hot Celestial Bodies).
-
-        <br><br>
-
-        <a href="https://mrdanh.itch.io/postmechpidge">
-        Post-Mech Pidge<br>
-        <img src="Screenshots/PMP.png" width=512 height=288>
-        </a>        
-        <br>Cyberpunk pigeon shoot 'em up. We wanted to go for a more arcadey feeling game, with a little bit of meta-progression between levels. I was happy that we managed to make the shooting also the mechanism for delivering mail, so therefore the whole pigeon thing makes total sense.
+        <img src="Screenshots/PMP.png" width=512 height=288 onclick="openJamModal('Screenshots/PMP.png', 'Post-Mech Pidge', 'https:\/\/mrdanh.itch.io/postmechpidge', 'Cyberpunk pigeon shoot \'em up. We wanted to go for a more arcadey feeling game, with a little bit of meta-progression between levels. I was happy that we managed to make the shooting also the mechanism for delivering mail, so therefore the whole pigeon thing makes total sense.')" style="cursor: pointer;">      
 
 	  <h3>Playdate (Playable in simulator or on device)</h3>
-        <a href="https://mrdanh.itch.io/quackmagic">
-        <h4>Quack Magic</h4>
-        <img src="Screenshots/QM.gif"8>
-        </a>
-        <br>My first project on the Playdate. Originally started with the idea of doing an Escher-esque puzzle game in the style of Echochrome, and I'm pretty happy that we managed to hit the sort of experience I wanted to hit. Spent a week on this, most of which was trying to muddle together the pseudo-3d style on the Playdate, using textures put through a shear transform. Turns out this is absolutely terrible for performance on device, so ended up doing a lot of texture precaching.
 
-        <br><br>
+        <img src="Screenshots/QM.gif" width=512 height=288 onclick="openPlaydateModal('Screenshots/QM.gif', 'Quack Magic', 'https:\/\/mrdanh.itch.io/quackmagic', 'My first project on the Playdate. Originally started with the idea of doing an Escher-esque puzzle game in the style of Echochrome, and I\'m pretty happy that we managed to hit the sort of experience I wanted to hit. Spent a week on this, most of which was trying to muddle together the pseudo-3d style on the Playdate, using textures put through a shear transform. Turns out this is absolutely terrible for performance on device, so ended up doing a lot of texture precaching.')" style="cursor: pointer;">      
 
-        <a href="https://mrdanh.itch.io/tricksfortreats">
-        Tricks For Treats<br>
-        <img src="Screenshots/TFT.gif">
-        </a>
-        <br>I'd been itching to try designing a simple card game, and so with the given 'Halloween' theme, I made a trick-taking game about trick or treating. It kindof worked; once the jam was over and I could step back from it a bit, I think the lack of card drawing between turns and long-term strategy made it a bit flat. I had no art support on this one, hence why it looks very a bit programmer-arty.  
+        <img src="Screenshots/TFT.gif" width=512 height=288 onclick="openPlaydateModal('Screenshots/TFT.gif', 'Tricks For Treats', 'https:\/\/mrdanh.itch.io/tricksfortreats', 'I\'d been itching to try designing a simple card game, and so with the given \'Halloween\' theme, I made a trick-taking game about trick or treating. It kindof worked; once the jam was over and I could step back from it a bit, I think the lack of card drawing between turns and long-term strategy made it a bit flat. I had no art support on this one, hence why it looks very a bit programmer-arty.')" style="cursor: pointer;">     
 
-        <br><br>
-
-        <a href="https://mrdanh.itch.io/croaked">
-        Croak'd<br>
-        <img src="Screenshots/CD.gif">
-        </a>        
-        <br>For the theme of 'Ascend', we made a game about a dead frog trying to get into heaven. The general design was "doodle jump with a grappling hook" (ie. frog tongue). Probably the hardest game I've ever made (not sure if anyone other than me has completed it), but we got 1st place in the jam, so people clearly liked it. 
+        <img src="Screenshots/CD.gif" width=512 height=288 onclick="openPlaydateModal('Screenshots/CD.gif', 'Croak\'d', 'https:\/\/mrdanh.itch.io/croaked', 'For the theme of \'Ascend\', we made a game about a dead frog trying to get into heaven. The general design was `doodle jump with a grappling hook` (ie. frog tongue). Probably the hardest game I\'ve ever made (not sure if anyone other than me has completed it), but we got 1st place in the jam, so people clearly liked it.')" style="cursor: pointer;">    
 
     </section>
   </main>
+
+<div id="modal" onclick="closeModal()" style="
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+">
+  <div style="
+    background: #000033;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+  ">
+    <img id="modal-image" src="" style="width: 100%; border-radius: 4px;">
+    <h2 id="modal-title"></h2>
+    <h4 id="modal-studio"></h4>
+    <h4 id="modal-platform"></h4>
+    <a href id="modal-url"></a>
+    <p id="modal-details"></p>
+    <!-- <button onclick="closeModal()">Close</button> -->
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+
+  function openModal(src, title, studio, platform, details) {
+    document.getElementById('modal-image').src = src;
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-studio').textContent = studio;
+    document.getElementById('modal-platform').textContent = platform;
+    document.getElementById('modal-url').textContent = '';
+    document.getElementById('modal-details').textContent = details;
+    modal.style.display = 'flex';
+  }
+
+  function openJamModal(src, title, link, details) {
+    document.getElementById('modal-image').src = src;
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-studio').textContent = '';
+    document.getElementById('modal-platform').textContent = '';
+    document.getElementById('modal-url').href = link;
+    document.getElementById('modal-url').textContent = 'Play on itch.io';
+    document.getElementById('modal-details').textContent = details;
+    modal.style.display = 'flex';
+  }  
+  
+  function openPlaydateModal(src, title, link, details) {
+    document.getElementById('modal-image').src = src;
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-studio').textContent = '';
+    document.getElementById('modal-platform').textContent = '';
+    document.getElementById('modal-url').href = link;
+    document.getElementById('modal-url').textContent = 'Download on itch.io';
+    document.getElementById('modal-details').textContent = details;
+    modal.style.display = 'flex';
+  }  
+
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
+
 </body>
 </html>
